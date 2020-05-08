@@ -1,0 +1,29 @@
+<h2>{{title}}</h2>
+<p>
+Number 1 : 
+<input type="text" [(ngModel)] = 'FirstValue' />
+</p>
+ <p>
+   Operator is : {{Operator}}
+ </p>
+
+<p>
+  Number 2 : 
+  <input type="text" [(ngModel)] = 'SecondValue' />
+</p>
+
+<p>
+Result : <input type="text" readonly [(ngModel)] = 'Result' />
+</p>
+
+
+<button (click)= "OnClick('Add')" >Addition</button>
+<br/>
+<button (click)=  "OnClick('Subtract')" >Subtraction</button>
+<br /> 
+<button (click)=  "OnClick('Multiply')" >Multiplication</button>
+<br /> 
+<button (click)=  "OnClick('Divide')" >Division</button>
+<br /> 
+<button (click)= 'Clear()' >Clear</button>
+
